@@ -1,0 +1,13 @@
+﻿
+@model SumaDosNumeros.Models.addModel
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <br />
+    @Html.EditorFor(m => m.firstNumber)
+    <br /> <br />
+    @Html.EditorFor(m => m.secondNumber)
+    <br /> <br />
+    @Html.DisplayFor(m => m.resultNumber)
+    <br /> <br />
+    <input type="submit" value="add" />
+}
